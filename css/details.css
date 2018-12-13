@@ -1,0 +1,297 @@
+	body,h1,h2,h3,h4,h5,h6,div,img,ul,ol,li,p,dl,dt,dd,td,input{
+			margin:0;
+			padding:0;
+		}
+		img{
+			display:block;
+			border:none;
+		}
+		body{
+				height:100%;
+				background:white;
+			}
+		ul li{
+				list-style:none;
+			}
+			.clear:after{
+				content: "";
+				display: block;
+				clear: both;
+				height: 0;
+				overflow: hidden;
+				visibility: hidden;
+			}
+			.details{
+				width:100%;
+				border-top:2px solid #dfdfdf;
+				display:-webkit-flex;
+				box-sizing:border-box;
+				-webkit-justify-content:space-between;
+			}
+			.detailsleft{
+				width:50%;
+				display:-webkit-flex;
+				-webkit-flex-direction:column;
+				-webkit-justify-content:space-between;
+			}
+/*			左上*/
+			.topLeft{
+				width:100%;
+				/*float:left;*/
+				padding:0 10px;
+				padding-top:45px;
+				box-sizing:border-box;
+				display:-webkit-flex;
+				-webkit-justify-content:space-between;
+			}
+			.bottomLeft{
+				padding-left:135px;
+				/*padding-right:75px;*/
+				box-sizing:border-box;
+			}
+			.detailsright{
+				width:50%;
+				height:500px; 
+				padding:0 100px;
+				padding-top:45px;
+				box-sizing:border-box;
+				
+				/*background:green; */
+			}
+			.shoesul{
+			/*	height:531px;*/
+				width:90px;
+				padding-left:10px;
+				margin-right:17px;
+				box-sizing:border-box;
+				display:-webkit-flex;
+				-webkit-justify-content:space-between;
+				-webkit-flex-direction: column;
+			}
+			.shoesli{
+				display:inline-block;
+			}
+			.shoesa{
+				display:block;
+				height:90px;
+				width:90px;
+				border:1px solid #7d7d7d;
+				box-sizing:border-box;
+			}
+			.jiantouli{
+				width:90px;
+				height:40px;
+				padding-left:28px;
+			}
+			.jiantoua{
+				display:block;
+				margin:0 auto;
+			}
+			.shoesImg{
+				display:block;
+				width:83px;
+				height:83px;
+				margin:auto;
+			}
+			.shoesone{
+				width:81px;
+				height:58px;
+				padding:16px 0;
+			}
+			.showBox{
+				height:531px;
+			/*	background:white;*/
+				-webkit-flex:1;
+				/*border:1px solid #b3b3b3;*/
+				position:relative;
+			}
+			.Hot{
+				width:75px;
+				height:77px;
+				border-radius:50%;
+				position:absolute;
+				right:0;
+				z-index:6;
+			}
+			.innerImg{
+				position:absolute;
+				top:77px;
+				left: 10px;
+				cursor: crosshair;
+			}
+			.down{
+				margin-top:20px;
+				transform: rotateZ(180deg);
+			}
+		
+	/*		右边	*/
+			.touyang{
+				font-size:30px;
+				color:#414042;
+				font-weight:200;
+				letter-spacing:2px;
+				padding-bottom:6px;
+			}
+			.pricesDiv{
+				width:100%;
+			}
+			.jgspan{
+				float:left;
+				width:195px;
+				height:42px;
+				padding-right:20px;
+			}
+			.jg{
+				display:block;
+				font-size:24px;
+				line-height:24px;
+				color:#414042;
+			}
+			.jy{
+				display:block;
+				font-size:10px;
+				color:#414042;
+			}
+			.jgsm{
+				display:block;
+				font-size:12px;
+				line-height:12px;
+				color:#414042;
+				text-decoration:underline;
+				float:left;
+				margin-top:15px;
+			}
+			.may{
+				font-size:12px;
+				line-height:12px;
+				color:#414042;
+				margin-top:18px;
+				
+			}
+			.many{
+				font-size:14px;
+				line-height:14px;
+				color:#414042;
+				margin-top:6px;
+				margin-bottom:30px;
+			}
+			.jia{
+				display:inline-block;
+				float:left;
+				font-size:14px;
+				line-height:14px;
+				color:#414042;
+				padding-top:25px;
+			}
+			.colorul li{
+				display:inline-block;
+				float:left;
+			}
+			.colora{
+				display:block;
+				width:78px;
+				height:64px;
+			}
+			.colorImg{
+				width:75px;
+				height:53px;
+				margin:auto;
+			}
+			.colordiv1{
+				margin-top:15px;
+			}
+			.colorli1{
+				margin-left:45px ;
+			}
+			.colorli2{
+				margin-left:10px ;
+			}
+			.go{
+				width:100%;
+				height:40px;
+				/*padding-top:8px;*/
+				margin-top:50px;
+				box-sizing:border-box;
+			}
+			.gomai{
+				display:block;
+				float:left;
+				cursor:pointer;
+				height:40px;
+				width:40%;
+				line-height:40px;
+				outline:none;
+				color:#ffffff;
+				font-size:18px;
+				font-weight:600;
+			}
+			.gomai1{
+				background:#008488;
+				margin-right:20px;
+			}
+			.gomai2{
+				background:#767676;
+			}
+			.xinyuan{
+				height:100%;
+				width:100%;
+				padding-left:20px;
+				box-sizing:border-box;
+			}
+			.xyuan{
+				display:inline-block;
+				float:left;
+				height:24px;
+				width:24px;
+				padding-top:8px;
+			}
+			.jiaru{
+				display:inline-block;
+				float:left;
+				padding-left:8px;
+			}
+			.canzhao{
+				margin:35px 0;
+			}
+			.chima{
+				font-size:14px;
+				color:#313131;
+			}
+			.celiang{
+				font-size:14px;
+				color:#478493;
+				text-decoration:underline;
+			}
+/*			尺码表*/
+		table{
+			border:1px solid #000000;
+			text-align:center;
+			vertical-align:middle;
+		}
+		tr{
+			height:40px;
+		}
+		td{
+			width:150px;
+			border-right:1px solid #ffffff;
+		}
+		/*	左下*/
+			.bottomLeft{
+				height:500px;
+				width:100%;
+			/*	background:red;*/
+				font-size:14px;
+				color:#313131;
+			}
+			.package{
+				line-height:22px;
+				margin-top：30px;
+				margin-bottom:35px;
+			}
+			.lie{
+				padding-left:30px;
+			}
+			.lie li{
+				list-style: square;
+				list-style-position:inside;
+			}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+	<div class="bigBox">
+		<div class="innerbox">
+			<div class="middlebBox">
+				<div class="box1">
+				 <p class="loginp">用户登陆<span class="loginspan">Login User</span></p>
+				 <div class="loginBox"><span class="twospan"></span><p class="huanying">欢迎登陆</p><span class="twospan"></span></div>
+				 <form action="logincheck.php" method="post">
+					<div class="formdiv">
+						<span class="span1 span01"></span>
+						<input class="input01" type="text" name="username" placeholder="用户名"/>
+					</div><br/>
+					<div class="formdiv">
+						<span class="span1 span02"></span>
+						<input class="input01" type="password" name="passpsw" placeholder="密码"/>
+					</div><br/>
+				 	<div class="mima">
+				 		<div class="jizhu"><input type="checkbox" checked/>记住密码</div>
+				 		<a class="wjia" href="#">
+				 			<img class="wji" src="img/wj.gif" alt="" />
+				 			<span class="wjspan">忘记密码</span>
+				 		</a>
+					</div>
+					<div class="yzmdiv">
+						<input class="yzminput" type="text" placeholder="请输入验证码"/>
+						<div class="yan">
+							<span class="yzmspan"></span>
+							<span class="huan">看不清，换一张</span>
+						</div>
+					</div>
+					<input  id="loginbtn" class="loginbtn" type="button" value="登陆"/>
+				 </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function $(str){
+		if(str.charAt(0)=="#"){
+			return document.getElementById(str.substring(1));
+		}else if(str.charAt(0)=="."){
+			return document.getElementsByClassName(str.substring(1));
+		}else{
+			return document.getElementsByTagName(str);
+		}
+	}
+	window.onload=function(){
+		$('#loginbtn').onclick=function(){
+			var xhr=new XMLHttpRequest();
+			xhr.open("post","logincheck.php",true);
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					if(xhr.responseText!=0){
+						window.location.href='index.html';
+					}else{
+						window.location.href='register.html';
+					}
+				}
+			}
+			xhr.send();
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
